@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "IranYekan";
+    src: url("../fonts/Iranyekanmedium.ttf");
+}
+*,body{
+    font-family: "IranYekan"!important;
+    font-size: .98em;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color:rgb(255, 168, 46)!important;
+}
+.MuiFormLabel-root.Mui-focused {
+    color: rgb(255, 168, 46)!important;
+  }
+  label[data-shrink=false]+.MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    width: 27em;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus{
+    width: 27em; 
+}
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+    color: rgb(255, 168, 46)!important;
+    border-color:rgb(255, 168, 46)!important;
+}
+.css-a99qwh-MuiButtonBase-root-MuiButton-root{
+    background-color:rgb(255, 168, 46)!important ;
+    color: black!important;
+}
+.css-l4ak7s-MuiButtonBase-root-MuiButton-root{
+    background-color:rgb(255, 168, 46)!important ;
+    color: black!important;   
+}
