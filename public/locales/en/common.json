@@ -1,5 +1,14 @@
 {  "form": {
-    "userSetting":"userSetting" ,
-    "edit":"edit"
+    "userSetting":"User Settings" ,
+    "edit":"edit",
+    "Socials":"Socials",
+    "delete":"delete",
+    "Link":"Link",
+    "add social":"Add Socials",
+    "reject":"cancel",
+    "submit social":"Submit Social",
+    "edit social":"Edit Social",
+    "type":"Type"
+
 }
 }

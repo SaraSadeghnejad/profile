@@ -4,11 +4,11 @@ export const links=[
         link:"http://hello.com"
     },
     { 
-        id:"1",
+        id:"2",
         link:"http://twitter.com"
     },
     { 
-        id:"1",
+        id:"3",
         link:"http://iphone.com"
     }
 ]

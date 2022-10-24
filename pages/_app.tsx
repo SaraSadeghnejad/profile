@@ -12,6 +12,7 @@ import createEmotionCache from 'src/createEmotionCache';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';;
 import { ThemeProvider } from 'next-themes';
 import { useTranslation } from 'react-i18next';
+import { appWithTranslation } from "next-i18next";
 const clientSideEmotionCache = createEmotionCache();
 
 type NextPageWithLayout = NextPage & {
@@ -22,6 +23,11 @@ interface TokyoAppProps extends AppProps {
   emotionCache?: EmotionCache;
   Component: NextPageWithLayout;
 }
+
+
+
+
+
 
 function App(props: AppProps) {
   
@@ -35,7 +41,7 @@ function App(props: AppProps) {
   Router.events.on('routeChangeComplete', nProgress.done);
 
   useEffect(() => {
-    let dir = router.locale == "fa" ? "rtl" : "ltr";
+    let dir = router.locale == "fa" ? "ltr" : "rtl";
     let lang = router.locale == "fa" ? "fa" : "en";
     document.querySelector("html").setAttribute("dir", dir);
     document.querySelector("html").setAttribute("lang", lang);
@@ -56,4 +62,4 @@ function App(props: AppProps) {
   );
 }
 
-export default App;
+export default appWithTranslation(App);
