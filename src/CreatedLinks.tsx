@@ -147,6 +147,7 @@ function CreatedLinks({trackerList,createdLinks}) {
             <Button
               variant="outlined"
               className="text-gray-800 dark:text-gray-200"
+              onClick={()=>{setOpen({ [tracker.id]: !open[tracker.id] });}}
             >
               {t("form.reject")}
             </Button>

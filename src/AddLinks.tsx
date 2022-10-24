@@ -42,7 +42,10 @@ function AddLinks({createdLinks}) {
       })
       .catch();
   };
-   
+   const handleCancel = () =>{
+        setOpenRoute(!openRoute); 
+        console.log("sdfdtgfdgh")
+   }
   return (
     <div>
       <div
@@ -88,7 +91,7 @@ function AddLinks({createdLinks}) {
             )}
           />
           <TextField
-            style={{direction:"ltr",textAlign:"ltr"}}
+            sx={{direction:"ltr",textAlign:"ltr"}}
             id="outlined-basic"
             label={t("form.Link")}
             required
@@ -113,9 +116,7 @@ function AddLinks({createdLinks}) {
           </Button>
           <Button
             variant="outlined"
-            onclick={() => {
-              handleReject();
-            }}
+            onClick={()=>{handleCancel()}}
           >
             {t("form.reject")}
           </Button>
